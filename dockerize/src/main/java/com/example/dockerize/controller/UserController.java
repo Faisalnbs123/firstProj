@@ -8,6 +8,6 @@ public class UserController {
 	@GetMapping(path="/emp") 
 	public String get()
 	{
-		return "First Project";
+		return "First project";
 	}
 }
