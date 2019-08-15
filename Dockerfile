@@ -1,0 +1,11 @@
+FROM ubuntu:latest
+
+RUN apt-get update && \
+apt-get install -y default-jre awscli
+
+
+EXPOSE 8080
+
+CMD ["sh", "-c", "aws s3 cp s3://file-java/dockerize/target/dockerize-0.0.1-SNAPSHOT.jar myProject.jar ; java -jar myProject.jar"] 
+
+
