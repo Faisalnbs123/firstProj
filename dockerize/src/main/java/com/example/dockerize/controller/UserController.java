@@ -6,8 +6,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class UserController {
 	@GetMapping(path="/emp") 
-	public int get()
+	public String get()
 	{
-		return 5;
+		return "First Project";
 	}
 }
